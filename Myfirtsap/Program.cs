@@ -10,7 +10,7 @@ class Program
         const int tamanho = 1000;
         int[] vetor = GeradorValores.GerarValoresUnicos(tamanho);
 
-        Console.WriteLine("🔢 Vetor desordenado (10 primeiros valores):");
+        Console.WriteLine(" Vetor desordenado (10 primeiros valores):");
         Util.ImprimirVetor(vetor, 10);
 
         Stopwatch stopwatch = Stopwatch.StartNew();
@@ -19,13 +19,13 @@ class Program
 
         stopwatch.Stop();
 
-        Console.WriteLine("\n✅ Vetor ordenado (10 primeiros valores):");
+        Console.WriteLine("\n Vetor ordenado (10 primeiros valores):");
         Util.ImprimirVetor(vetor, 10);
 
-        Console.WriteLine($"\n⏱️ Tempo de execução: {stopwatch.ElapsedMilliseconds} ms");
+        Console.WriteLine($"\n Tempo de execução: {stopwatch.ElapsedMilliseconds} ms");
 
-        // Estatísticas
-        Console.WriteLine($"\n📊 Estatísticas:");
+        
+        Console.WriteLine($"\n Estatísticas:");
         Console.WriteLine($"Menor valor: {vetor.First()}");
         Console.WriteLine($"Maior valor: {vetor.Last()}");
         Console.WriteLine($"Média: {vetor.Average():F2}");
